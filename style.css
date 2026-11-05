@@ -258,24 +258,4 @@ form{
     color: white;
 }
 
-@media (max-width:768px){
 
-    .navbar{
-        flex-direction:column;
-    }
-
-    .home{
-        flex-direction:column;
-        text-align:center;
-    }
-
-    .form-box{
-        width:90%;
-    }
-
-    img{
-        width:100%;
-        height:auto;
-    }
-
-}
