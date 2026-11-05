@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    z-index: 100;
+}
+body{
+    background-color: white;
+    font-size: 14px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+}
+
+.logo:hover {
+    color: brown;
+    transition: 0.5 ease;
+    text-shadow: 0 0 25px brown,
+        0 0 50px brown;
+    transform: scale(1, 1);
+
+}
+
+span {
+    color: rgb(255, 0, 4);
+}
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 25px;
+    transition: 0.3 ease;
+}
+
+.navbar a:hover {
+    color: orangered;
+}
+
+
+a.ative {
+    color: orangered;
+}
+.contact {
+    font-weight: 700;
+    font-size: 17px;
+    color: black;
+    font-weight: 500;
+    background-color:orangered;
+    border-radius: 8px;
+    padding: 10px;
+    letter-spacing: 1px;
+    transition: 0.3 ease;
+}
+
+.contact:hover {
+
+    background-color:white;
+    box-shadow: 0 0 25px orangered;
+    color: orange;
+}
+
+.home {
+    width: 100%;
+    background: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    gap: 5em;
+    padding: 30px 12% 0;
+    min-height: 100vh;
+}
+
+.home-content {
+    max-width: 900px;
+}
+
+.home-content h3 {
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.home-content h1 {
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.home-content p {
+    font-size: 20px;
+    margin: 25px 0 30px;
+    font-weight: 600;
+
+}
+
+.btnbox {
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+
+.btn-1 {
+    padding: 20px;
+    background-color: black;
+    color: beige;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: 0.3 ease;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-1:hover {
+    background-color: beige;
+    color: black;
+    border: 2px solid black;
+}
+
+.btn-2 {
+    padding: 20px;
+    background-color: rgb(220, 82, 19);
+    color: beige;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: 0.3 ease;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-2:hover {
+    background-color: beige;
+    color: orangered;
+    border: 2px solid black;
+}
+
+.image img {
+    border-radius: 50%;
+    width: 550px;
+    height: 570px;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background: black;
+}
+.about-image img{
+    position: relative;
+    border-radius: 50%;
+    width:500px;
+    height: 540px;
+    box-shadow: orangered 0 0 25px;
+}
+.content h3{
+    font-size: 50px;
+    color: white;
+    
+}
+.heading{
+    font-size: 40px;
+    text-align: left;
+    color: white;
+}
+.content p{
+    font-size: 20px;
+    color: white;
+    margin: 2em 0;
+}
+.contact-me{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+form{
+    max-width: 50em;
+    margin:  auto ;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  
+   .contact-form form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.input-box  input , textarea{
+    width: 100%;
+    padding: 1.5em;
+    margin: 1rem;
+    border-radius: 10px;
+    color: black;
+    font-size: 20px;
+}
+.low{
+    position: relative;
+   background-color: black;
+    width: 100%;
+    padding: 30px;
+    bottom: 0;
+}
+.low .fgh{
+    color: white;
+    text-align: center;
+    padding-bottom: 25px;
+}
+.low .fgh img{
+    color :white;
+    font-size: 30px;
+    width:40px;
+    height: 40px;
+}
+.social a:hover{
+    color: orangered;
+    border: 2px solid orangered;
+}
+.low .social{
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.social li a{
+    color: white;
+    border-bottom: 3px solid transparent;
+}
+.social li{
+    display: inline-block;
+    padding: 0 15px;
+} 
+.copy{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+
+@media (max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+    }
+
+    .home{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .form-box{
+        width:90%;
+    }
+
+    img{
+        width:100%;
+        height:auto;
+    }
+
+}
